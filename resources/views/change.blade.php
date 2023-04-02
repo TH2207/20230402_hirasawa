@@ -59,7 +59,7 @@
           <input type="date" name="reserve_at_date" value="{{$reserve_at_date}}" class="common-sub-right-inputbox calender" id="date">
           <input type="time" name="reserve_at_time" value="{{$reserve_at_time}}" class="common-sub-right-inputbox timeperson" id="time" />
           <select name='reserve_person' class="common-sub-right-inputbox timeperson" id="person">
-            @for($i = 1; $i < 256; $i++) <option value='{{$i}}' {{$i == $reserve->reserve_person ? 'selected' : '' }}>{{$i}}人</option>
+            @for($i = 1; $i <= 50; $i++) <option value='{{$i}}' {{$i == $reserve->reserve_person ? 'selected' : '' }}>{{$i}}人</option>
               @endfor
           </select>
           <div class="common-sub-right-input-table">
